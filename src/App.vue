@@ -266,9 +266,9 @@
       </h3>
       <p class="mb-6">Empieza gratis y lleva tu negocio al siguiente nivel.</p>
       <a
-        href="#"
+        href="https://parklinkapp.laravel.cloud/register?role=operator"
         class="inline-block rounded-xl bg-white px-6 py-3 font-semibold text-blue-700 hover:bg-gray-100"
-        >Solicita tu demo</a
+        >Registrate ahora!</a
       >
     </section>
 
