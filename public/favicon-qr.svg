@@ -1,0 +1,11 @@
+
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" fill="white"/>
+  <!-- QR-like blocks -->
+  <rect x="4" y="4" width="12" height="12" fill="black"/>
+  <rect x="48" y="4" width="12" height="12" fill="black"/>
+  <rect x="4" y="48" width="12" height="12" fill="black"/>
+  <!-- Letters -->
+  <text x="22" y="42" font-size="24" font-family="Arial" font-weight="bold" fill="#1e40af">P</text>
+  <text x="36" y="42" font-size="24" font-family="Arial" font-weight="bold" fill="#3b82f6">L</text>
+</svg>
