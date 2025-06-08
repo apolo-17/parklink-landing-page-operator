@@ -272,6 +272,24 @@
       >
     </section>
 
+    <!-- Contact Email -->
+    <section class="bg-gray-100 py-12 text-center">
+      <div class="container mx-auto px-4">
+        <h3 class="mb-4 text-2xl font-bold text-gray-800">
+          ¿Tienes dudas o quieres colaborar?
+        </h3>
+        <p class="text-lg text-gray-700">
+          Escríbenos a
+          <a
+            href="mailto:hola@parklink.com.mx"
+            class="text-blue-600 hover:underline font-semibold"
+          >
+            hola@parklink.com.mx
+          </a>
+        </p>
+      </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-blue-900 py-4 text-center text-white">
       <p class="text-sm">
