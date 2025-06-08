@@ -45,9 +45,9 @@
         desde cualquier lugar.
       </p>
       <a
-        href="#contact"
+        href="https://parklinkapp.laravel.cloud/register?role=operator"
         class="inline-block rounded-xl bg-blue-500 px-6 py-3 font-semibold text-white hover:bg-blue-600"
-        >Solicita una demo</a
+        >Registrarse</a
       >
     </section>
 
