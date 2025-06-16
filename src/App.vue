@@ -6,7 +6,13 @@
         <h1 class="text-3xl font-black text-blue-800">
           Park<span class="text-blue-500">Link</span>
         </h1>
-        <button class="md:hidden">
+
+        <!-- Botón hamburguesa en mobile -->
+        <button
+          class="md:hidden"
+          @click="toggleMenu"
+          aria-label="Toggle navigation"
+        >
           <svg
             class="h-6 w-6 text-blue-800"
             fill="none"
@@ -22,6 +28,8 @@
             />
           </svg>
         </button>
+
+        <!-- Menú desktop -->
         <nav class="hidden space-x-6 md:flex">
           <a href="#features" class="hover:text-blue-500">Beneficios</a>
           <a href="#how-it-works" class="hover:text-blue-500">Cómo Funciona</a>
@@ -30,7 +38,17 @@
           <a href="#contact" class="hover:text-blue-500">Contacto</a>
         </nav>
       </div>
+
+      <!-- Menú mobile desplegable -->
+      <div v-if="isMenuOpen" class="md:hidden bg-white shadow-inner px-4 pb-4 space-y-2">
+        <a href="#features" class="block text-blue-800 hover:text-blue-500">Beneficios</a>
+        <a href="#how-it-works" class="block text-blue-800 hover:text-blue-500">Cómo Funciona</a>
+        <a href="#testimonials" class="block text-blue-800 hover:text-blue-500">Testimonios</a>
+        <a href="#partners" class="block text-blue-800 hover:text-blue-500">Socios</a>
+        <a href="#contact" class="block text-blue-800 hover:text-blue-500">Contacto</a>
+      </div>
     </header>
+
 
     <!-- Spacer for fixed header -->
     <div class="h-20"></div>
@@ -300,7 +318,12 @@
 </template>
 
 <script setup>
-// No se necesita JS por ahora
+import { ref } from 'vue';
+
+const isMenuOpen = ref(false);
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+};
 </script>
 
 <style scoped>
