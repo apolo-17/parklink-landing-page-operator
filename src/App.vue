@@ -40,15 +40,27 @@
       </div>
 
       <!-- Menú mobile desplegable -->
-      <div v-if="isMenuOpen" class="md:hidden bg-white shadow-inner px-4 pb-4 space-y-2">
-        <a href="#features" class="block text-blue-800 hover:text-blue-500">Beneficios</a>
-        <a href="#how-it-works" class="block text-blue-800 hover:text-blue-500">Cómo Funciona</a>
-        <a href="#testimonials" class="block text-blue-800 hover:text-blue-500">Testimonios</a>
-        <a href="#partners" class="block text-blue-800 hover:text-blue-500">Socios</a>
-        <a href="#contact" class="block text-blue-800 hover:text-blue-500">Contacto</a>
+      <div
+        v-if="isMenuOpen"
+        class="md:hidden bg-white shadow-inner px-4 pb-4 space-y-2"
+      >
+        <a href="#features" class="block text-blue-800 hover:text-blue-500"
+          >Beneficios</a
+        >
+        <a href="#how-it-works" class="block text-blue-800 hover:text-blue-500"
+          >Cómo Funciona</a
+        >
+        <a href="#testimonials" class="block text-blue-800 hover:text-blue-500"
+          >Testimonios</a
+        >
+        <a href="#partners" class="block text-blue-800 hover:text-blue-500"
+          >Socios</a
+        >
+        <a href="#contact" class="block text-blue-800 hover:text-blue-500"
+          >Contacto</a
+        >
       </div>
     </header>
-
 
     <!-- Spacer for fixed header -->
     <div class="h-20"></div>
@@ -79,7 +91,7 @@
     </section>
 
     <!-- Beneficios para operadores -->
-    <section id="features-operators" class="bg-gray-100 py-16">
+    <section id="features" class="bg-gray-100 py-16">
       <div class="container mx-auto px-4 text-center">
         <h3 class="mb-8 text-2xl font-bold">Beneficios para operadores</h3>
         <div class="grid gap-8 md:grid-cols-3">
@@ -158,6 +170,9 @@
               class="mx-auto mb-4 h-12 w-12 text-blue-500"
               fill="none"
               stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
               viewBox="0 0 24 24"
             >
               <path d="M3 10h11v4H3z" />
@@ -171,6 +186,9 @@
               class="mx-auto mb-4 h-12 w-12 text-blue-500"
               fill="none"
               stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
               viewBox="0 0 24 24"
             >
               <path d="M4 6h16M4 12h8m-8 6h16" />
@@ -183,6 +201,9 @@
               class="mx-auto mb-4 h-12 w-12 text-blue-500"
               fill="none"
               stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
               viewBox="0 0 24 24"
             >
               <path d="M8 7h8v10H8z" />
@@ -196,6 +217,9 @@
               class="mx-auto mb-4 h-12 w-12 text-blue-500"
               fill="none"
               stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
               viewBox="0 0 24 24"
             >
               <path d="M5 12h14M12 5l7 7-7 7" />
@@ -211,73 +235,135 @@
     <section id="how-it-works" class="bg-gray-100 py-16">
       <div class="container mx-auto px-4 text-center">
         <h3 class="mb-8 text-2xl font-bold">¿Cómo funciona?</h3>
-        <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <img
-              src="https://placehold.co/600x400?text=Mapa+QR"
+              src="/map_lp_parklink_v2.png"
               alt="Vista del sistema"
-              class="mx-auto rounded-lg shadow-md"
+              class="mx-auto w-full max-w-xl rounded-lg shadow-md"
             />
           </div>
-          <div class="text-left">
-            <ol class="list-decimal list-inside space-y-4">
-              <li>El conductor escanea un QR al entrar al estacionamiento.</li>
-              <li>
+
+          <!-- Instrucciones con íconos -->
+          <div class="text-left space-y-6 md:pl-12">
+            <!-- Paso 1 -->
+            <div class="flex items-center space-x-4">
+              <svg
+                class="h-10 w-10 text-blue-500"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M3 10h11v4H3z" />
+                <path d="M18 6h3v12h-3" />
+              </svg>
+              <p class="text-lg">
+                El conductor escanea un QR al entrar al estacionamiento.
+              </p>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="flex items-center space-x-4">
+              <svg
+                class="h-10 w-10 text-blue-500"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+              <p class="text-lg">
                 El sistema registra la entrada y genera un boleto digital.
-              </li>
-              <li>
+              </p>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="flex items-center space-x-4">
+              <svg
+                class="h-10 w-10 text-blue-500"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path
+                  d="M12 6v6l3 3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <p class="text-lg">
                 Al salir, el sistema calcula el tiempo y muestra el monto.
-              </li>
-              <li>El conductor paga desde su celular y se abre la salida.</li>
-            </ol>
+              </p>
+            </div>
+
+            <!-- Paso 4 -->
+            <div class="flex items-center space-x-4">
+              <svg
+                class="h-10 w-10 text-blue-500"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+              <p class="text-lg">
+                El conductor paga desde su celular y se abre la salida.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="bg-gray-100 py-16">
+    <!-- Testimonials (Carrusel continuo) -->
+    <!-- Testimonials (Carrusel continuo con degradado azul) -->
+    <section
+      id="testimonials"
+      class="bg-gradient-to-r from-blue-50 to-blue-100 py-16 overflow-hidden"
+      @mouseenter="isPaused = true"
+      @mouseleave="isPaused = false"
+    >
       <div class="container mx-auto px-4 text-center">
-        <h3 class="mb-8 text-2xl font-bold">Lo que dicen nuestros clientes</h3>
-        <div class="grid gap-8 md:grid-cols-3">
-          <div class="rounded-xl bg-white p-6 shadow">
-            <img
-              src="https://randomuser.me/api/portraits/men/32.jpg"
-              alt="Juan Pérez"
-              class="mx-auto mb-4 h-16 w-16 rounded-full"
-            />
-            <p class="italic">
-              “Desde que usamos ParkLink, todo es más ágil. Los clientes pagan
-              sin bajarse del auto.”
-            </p>
-            <div class="my-2 text-yellow-400">★★★★★</div>
-            <p class="mt-2 font-bold">Juan Pérez, Estacionamiento Centro</p>
-          </div>
-          <div class="rounded-xl bg-white p-6 shadow">
-            <img
-              src="https://randomuser.me/api/portraits/women/44.jpg"
-              alt="Laura Méndez"
-              class="mx-auto mb-4 h-16 w-16 rounded-full"
-            />
-            <p class="italic">
-              “La app es intuitiva, mis empleados aprendieron a usarla en un
-              solo día.”
-            </p>
-            <div class="my-2 text-yellow-400">★★★★☆</div>
-            <p class="mt-2 font-bold">Laura Méndez, AutoPark Sur</p>
-          </div>
-          <div class="rounded-xl bg-white p-6 shadow">
-            <img
-              src="https://randomuser.me/api/portraits/men/75.jpg"
-              alt="Carlos Ramírez"
-              class="mx-auto mb-4 h-16 w-16 rounded-full"
-            />
-            <p class="italic">
-              “Puedo ver mis ingresos diarios desde mi celular. ¡Lo recomiendo!”
-            </p>
-            <div class="my-2 text-yellow-400">★★★★★</div>
-            <p class="mt-2 font-bold">Carlos Ramírez, Parking Norte</p>
-          </div>
+        <h3 class="mb-8 text-2xl font-bold text-gray-800">
+          Lo que dicen nuestros clientes
+        </h3>
+
+        <div
+          ref="carouselRef"
+          class="flex gap-6 w-full overflow-x-auto scroll-smooth"
+          style="scrollbar-width: none; -ms-overflow-style: none"
+        >
+          <!-- Duplicamos testimonios para scroll infinito visual -->
+          <template
+            v-for="(testimonial, index) in [...testimonials, ...testimonials]"
+            :key="index"
+          >
+            <div
+              class="min-w-[300px] max-w-xs flex-shrink-0 rounded-xl bg-white p-6 shadow text-left"
+            >
+              <img
+                :src="testimonial.image"
+                :alt="testimonial.name"
+                class="mb-4 h-16 w-16 rounded-full mx-auto"
+              />
+              <p class="italic text-sm md:text-base text-gray-700">
+                “{{ testimonial.comment }}”
+              </p>
+              <div class="my-2 text-yellow-400 text-center">
+                {{ testimonial.stars }}
+              </div>
+              <p
+                class="mt-2 font-bold text-sm md:text-base text-center text-gray-800"
+              >
+                {{ testimonial.name }}, {{ testimonial.role }}
+              </p>
+            </div>
+          </template>
         </div>
       </div>
     </section>
@@ -356,12 +442,89 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted, onUnmounted } from "vue";
 
+// Lógica del menú responsive
 const isMenuOpen = ref(false);
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
+
+// Lógica del carrusel continuo horizontal
+const isPaused = ref(false);
+const carouselRef = ref(null);
+const speed = 0.5; // Ajusta la velocidad del scroll
+let animationFrame;
+
+const scrollCarousel = () => {
+  if (!isPaused.value && carouselRef.value) {
+    carouselRef.value.scrollLeft += speed;
+    // Reinicio suave al final
+    if (carouselRef.value.scrollLeft >= carouselRef.value.scrollWidth / 2) {
+      carouselRef.value.scrollLeft = 0;
+    }
+  }
+  animationFrame = requestAnimationFrame(scrollCarousel);
+};
+
+onMounted(() => {
+  animationFrame = requestAnimationFrame(scrollCarousel);
+});
+
+onUnmounted(() => {
+  cancelAnimationFrame(animationFrame);
+});
+
+// Lista de testimonios (repetidos para scroll continuo)
+const testimonials = [
+  {
+    name: "Juan Pérez",
+    role: "Estacionamiento Centro",
+    comment:
+      "Desde que usamos ParkLink, todo es más ágil. Los clientes pagan sin bajarse del auto.",
+    stars: "★★★★★",
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    name: "Laura Méndez",
+    role: "AutoPark Sur",
+    comment:
+      "La app es intuitiva, mis empleados aprendieron a usarla en un solo día.",
+    stars: "★★★★☆",
+    image: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    name: "Carlos Ramírez",
+    role: "Parking Norte",
+    comment: "Puedo ver mis ingresos diarios desde mi celular. ¡Lo recomiendo!",
+    stars: "★★★★★",
+    image: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+  {
+    name: "Andrea López",
+    role: "Conductora frecuente",
+    comment:
+      "Me encanta no tener que buscar efectivo, todo es desde el celular.",
+    stars: "★★★★★",
+    image: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+  {
+    name: "Eduardo Torres",
+    role: "Conductor",
+    comment:
+      "Los boletos digitales me han salvado, ya no pierdo mis comprobantes.",
+    stars: "★★★★★",
+    image: "https://randomuser.me/api/portraits/men/51.jpg",
+  },
+  {
+    name: "María Gómez",
+    role: "Dueña de Parking San Pedro",
+    comment:
+      "Con ParkLink tengo control total de mis tickets. Ya no hay pérdidas.",
+    stars: "★★★★★",
+    image: "https://randomuser.me/api/portraits/women/20.jpg",
+  },
+];
 </script>
 
 <style scoped>
@@ -385,5 +548,18 @@ const toggleMenu = () => {
 
 .animate-flicker3 {
   animation: flicker 4.2s infinite ease-in-out;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee var(--animation-duration, 40s) linear infinite;
 }
 </style>
