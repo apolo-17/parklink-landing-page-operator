@@ -44,15 +44,24 @@
         Digitaliza el cobro, mejora la experiencia del cliente y administra
         desde cualquier lugar.
       </p>
-      <a
-        href="https://parklinkapp.laravel.cloud/register?role=operator"
-        class="inline-block rounded-xl bg-blue-500 px-6 py-3 font-semibold text-white hover:bg-blue-600"
-        >Registrarse</a
-      >
+      <div class="space-x-4">
+        <a
+          href="https://parklinkapp.laravel.cloud/register?role=operator"
+          class="inline-block rounded-xl bg-white px-6 py-3 font-semibold text-blue-700 hover:bg-gray-100"
+        >
+          Soy operador
+        </a>
+        <a
+          href="#"
+          class="inline-block rounded-xl bg-blue-500 px-6 py-3 font-semibold text-white hover:bg-blue-600"
+        >
+          Soy conductor
+        </a>
+      </div>
     </section>
 
-    <!-- Features -->
-    <section id="features" class="bg-gray-100 py-16">
+    <!-- Beneficios para operadores -->
+    <section id="features-operators" class="bg-gray-100 py-16">
       <div class="container mx-auto px-4 text-center">
         <h3 class="mb-8 text-2xl font-bold">Beneficios para operadores</h3>
         <div class="grid gap-8 md:grid-cols-3">
@@ -64,14 +73,7 @@
               stroke-width="2"
               viewBox="0 0 24 24"
             >
-              <circle
-                cx="12"
-                cy="12"
-                r="10"
-                stroke="currentColor"
-                stroke-width="2"
-                fill="none"
-              />
+              <circle cx="12" cy="12" r="10" />
               <path
                 d="M12 6v6l3 3"
                 stroke-linecap="round"
@@ -92,42 +94,10 @@
               stroke-width="2"
               viewBox="0 0 24 24"
             >
-              <rect
-                x="3"
-                y="3"
-                width="7"
-                height="7"
-                rx="1"
-                ry="1"
-                stroke="currentColor"
-              />
-              <rect
-                x="14"
-                y="3"
-                width="7"
-                height="7"
-                rx="1"
-                ry="1"
-                stroke="currentColor"
-              />
-              <rect
-                x="3"
-                y="14"
-                width="7"
-                height="7"
-                rx="1"
-                ry="1"
-                stroke="currentColor"
-              />
-              <rect
-                x="14"
-                y="14"
-                width="7"
-                height="7"
-                rx="1"
-                ry="1"
-                stroke="currentColor"
-              />
+              <rect x="3" y="3" width="7" height="7" rx="1" ry="1" />
+              <rect x="14" y="3" width="7" height="7" rx="1" ry="1" />
+              <rect x="3" y="14" width="7" height="7" rx="1" ry="1" />
+              <rect x="14" y="14" width="7" height="7" rx="1" ry="1" />
             </svg>
             <h4 class="text-lg font-semibold">Control total</h4>
             <p>
@@ -143,7 +113,7 @@
               stroke-width="2"
               viewBox="0 0 24 24"
             >
-              <circle cx="12" cy="12" r="10" stroke="currentColor" />
+              <circle cx="12" cy="12" r="10" />
               <path
                 d="M9 12l2 2 4-4"
                 stroke-linecap="round"
@@ -160,22 +130,90 @@
       </div>
     </section>
 
-    <!-- Cómo aparecen en el mapa -->
-    <section class="px-4 py-16 text-center">
-      <div class="mx-auto max-w-3xl">
-        <h3 class="mb-4 text-2xl font-bold">
-          Tus estacionamientos visibles al mundo
-        </h3>
-        <p class="mb-4">
-          Cada estacionamiento registrado será visible en nuestra plataforma web
-          y en mapas como Google Maps. Los usuarios podrán calificar, recomendar
-          y encontrar tu ubicación en línea.
-        </p>
-        <p>
-          Trabajamos con plataformas como Google Maps, Waze y próximamente otras
-          apps de movilidad para mostrar tu negocio donde tus clientes están
-          buscando.
-        </p>
+    <!-- Beneficios para conductores -->
+    <section id="features-drivers" class="bg-white py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h3 class="mb-8 text-2xl font-bold">Beneficios para conductores</h3>
+        <div class="grid gap-8 md:grid-cols-4">
+          <div>
+            <svg
+              class="mx-auto mb-4 h-12 w-12 text-blue-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M3 10h11v4H3z" />
+              <path d="M18 6h3v12h-3" />
+            </svg>
+            <h4 class="text-lg font-semibold">Escaneo rápido</h4>
+            <p>Entra y sal con solo escanear un código QR.</p>
+          </div>
+          <div>
+            <svg
+              class="mx-auto mb-4 h-12 w-12 text-blue-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+            <h4 class="text-lg font-semibold">Pago desde el celular</h4>
+            <p>Olvídate del efectivo, paga fácil desde tu teléfono.</p>
+          </div>
+          <div>
+            <svg
+              class="mx-auto mb-4 h-12 w-12 text-blue-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M8 7h8v10H8z" />
+              <path d="M6 3h12v18H6z" />
+            </svg>
+            <h4 class="text-lg font-semibold">Boleto digital</h4>
+            <p>Accede a tu ticket desde cualquier dispositivo.</p>
+          </div>
+          <div>
+            <svg
+              class="mx-auto mb-4 h-12 w-12 text-blue-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+            <h4 class="text-lg font-semibold">Historial completo</h4>
+            <p>Consulta tus entradas y pagos anteriores.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- (contenido existente conservado) -->
+    <section id="how-it-works" class="bg-gray-100 py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h3 class="mb-8 text-2xl font-bold">¿Cómo funciona?</h3>
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <img
+              src="https://placehold.co/600x400?text=Mapa+QR"
+              alt="Vista del sistema"
+              class="mx-auto rounded-lg shadow-md"
+            />
+          </div>
+          <div class="text-left">
+            <ol class="list-decimal list-inside space-y-4">
+              <li>El conductor escanea un QR al entrar al estacionamiento.</li>
+              <li>
+                El sistema registra la entrada y genera un boleto digital.
+              </li>
+              <li>
+                Al salir, el sistema calcula el tiempo y muestra el monto.
+              </li>
+              <li>El conductor paga desde su celular y se abre la salida.</li>
+            </ol>
+          </div>
+        </div>
       </div>
     </section>
 
